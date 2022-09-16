@@ -3,6 +3,7 @@ void main() {
   print("---------------");
   loops();
   print(asciiCat());
+  whileLooping(3, 100);
 }
 
 /*
@@ -29,5 +30,13 @@ String asciiCat() {
 }
 
 /*
- * While loop
+ * While loop with args
  */
+void whileLooping(int multiplier, int limit) {
+  int iterable = 1;
+  while (iterable < limit) {
+    iterable *= multiplier;
+  }
+  print(
+      "Reached limit of ${limit} with multiplier of ${multiplier} with value ${iterable}");
+}
