@@ -1,9 +1,13 @@
+import 'Student.dart';
+
 void main() {
   print("Dart Basics");
   print("---------------");
   loops();
   print(asciiCat());
   whileLooping(3, 100);
+  Student addi = new Student("Addison", 23);
+  print("Student ${addi.name} is ${addi.age}");
 }
 
 /*
